@@ -1,0 +1,53 @@
+{
+  "name": "similar-npm-packages",
+  "version": "1.0.0",
+  "description": "Similar packages suggestions for the NPM ecosystem",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "check-types": "tsc --noEmit true",
+    "test": "npm run lint && npm run check-types",
+    "build": "rm -rf ./dist/* && tsc --outDir dist",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": "pastelsky/similar-npm-packages",
+  "keywords": [
+    "npm",
+    "similar",
+    "packages",
+    "list"
+  ],
+  "author": "Bundlephobia Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pastelsky/similar-npm-packages/issues"
+  },
+  "homepage": "hhttps://bundlephobia.com/",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.5"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "prettier"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended",
+      "prettier/@typescript-eslint"
+    ]
+  },
+  "prettier": {
+    "trailingComma": "es5"
+  }
+}
