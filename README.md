@@ -9,6 +9,12 @@
   <a href="https://bundlephobia.com/">Bundlephobia</a> team project
 </div>
 
+## How to add a package or category
+
+The best way to help us improve our registry is to create a Pull Request updating `src/similar-npm-packages.ts` file.
+
+Qualitative over quantitative. Before contributing you should know that we keep suggestions limited to 5 packages in all categories. If you're going to add a package to a "crowded" category, be ready to explain your suggestion. Qualitative over quantitative.
+
 ## Install
 
 ```
