@@ -14,8 +14,6 @@
 - [ ] Package has at least 1000 weekly downloads on NPM.
 - [ ] Package has 100+ stars on GitHub.
 - [ ] Package has 5+ dependents on [GitHub](http://bit.ly/gh-depends) or/and NPM.
-- [ ] Package has README and LICENSE.
-- [ ] Package has tests.
 
 <!-- All of the above factors are considered for acceptance -->
 <!-- To select a checkbox, add an `x` in between the brackets  -->
