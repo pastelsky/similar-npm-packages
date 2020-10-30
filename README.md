@@ -11,11 +11,9 @@
 
 ## How to add a package or category
 
-The best way to help us improve our registry is to create a Pull Request updating `src/similar-npm-packages.ts` file.
+If you want to help us improve the registry you could [create a new issue](https://github.com/pastelsky/similar-npm-packages/issues/new) describing a suggested package/category or change `src/similar-npm-packages.ts` file yourself with a pull request.
 
 Qualitative over quantitative. Before contributing you should know that we keep suggestions limited to 5 packages in all categories. If you're going to add a package to a "crowded" category, be ready to explain your suggestion. Qualitative over quantitative.
-
-Read the [contributing guide](https://github.com/pastelsky/similar-npm-packages/blob/main/CONTRIBUTING.md) for more details.
 
 ## Install
 
