@@ -1,6 +1,22 @@
 import { Categories, Weight } from "./internals/types";
 
 export const categories: Categories = {
+  "browser-http-request": {
+    name: "HTTP client libraries for Browser",
+    tags: [
+      { tag: "http", weight: Weight.NORMAL },
+      { tag: "get", weight: Weight.NORMAL },
+      { tag: "post", weight: Weight.NORMAL },
+      { tag: "ajax", weight: Weight.HIGH },
+      { tag: "url", weight: Weight.MIN },
+      { tag: "request", weight: Weight.HIGH },
+      { tag: "agent", weight: Weight.LOW },
+      { tag: "xhr", weight: Weight.NORMAL },
+      { tag: "browser", weight: Weight.NORMAL },
+    ],
+    similar: ["axios", "ky", "superagent", "whatwg-fetch", "unfetch"],
+  },
+
   "classname-strings": {
     name: "Classname string construction",
     tags: [
@@ -29,17 +45,6 @@ export const categories: Categories = {
     ],
   },
 
-  "css-in-js": {
-    name: "CSS in JS libraries",
-    tags: [
-      { tag: "css js", weight: Weight.NORMAL },
-      { tag: "styles", weight: Weight.NORMAL },
-      { tag: "inline", weight: Weight.NORMAL },
-      { tag: "in", weight: Weight.LOW },
-    ],
-    similar: ["styled-components", "jss", "emotion", "linaria"],
-  },
-
   "color-manipulation": {
     name: "Color parsing and manipulation",
     tags: [{ tag: "color convert parse manipulate", weight: Weight.NORMAL }],
@@ -59,6 +64,17 @@ export const categories: Categories = {
       { tag: "browser", weight: Weight.MIN },
     ],
     similar: ["cookie", "tough-cookie", "js-cookie", "tiny-cookie"],
+  },
+
+  "css-in-js": {
+    name: "CSS in JS libraries",
+    tags: [
+      { tag: "css js", weight: Weight.NORMAL },
+      { tag: "styles", weight: Weight.NORMAL },
+      { tag: "inline", weight: Weight.NORMAL },
+      { tag: "in", weight: Weight.LOW },
+    ],
+    similar: ["styled-components", "jss", "emotion", "linaria"],
   },
 
   "date-nlp": {
@@ -116,17 +132,6 @@ export const categories: Categories = {
     similar: ["xlsx", "exceljs", "node-xlsx", "excel4node"],
   },
 
-  "full-text-search": {
-    name: "Text search",
-    tags: [
-      { tag: "search", weight: Weight.NORMAL },
-      { tag: "solr", weight: Weight.HIGH },
-      { tag: "fuzzy", weight: Weight.NORMAL },
-      { tag: "text", weight: Weight.NORMAL },
-    ],
-    similar: ["flexsearch", "lunr", "wade", "js-search", "fuse.js"],
-  },
-
   "fetch-polyfill": {
     name: "Fetch polyfills",
     tags: [
@@ -139,16 +144,15 @@ export const categories: Categories = {
     similar: ["whatwg-fetch", "node-fetch", "unfetch", "make-fetch-happen"],
   },
 
-  "general-purpose-date-time": {
-    name: "General purpose date-time utilities",
+  "full-text-search": {
+    name: "Text search",
     tags: [
-      { tag: "date", weight: Weight.HIGH },
-      { tag: "time", weight: Weight.HIGH },
-      { tag: "parse", weight: Weight.LOW },
-      { tag: "parser", weight: Weight.LOW },
-      { tag: "format", weight: Weight.LOW },
+      { tag: "search", weight: Weight.NORMAL },
+      { tag: "solr", weight: Weight.HIGH },
+      { tag: "fuzzy", weight: Weight.NORMAL },
+      { tag: "text", weight: Weight.NORMAL },
     ],
-    similar: ["moment", "luxon", "dayjs", "date-fns"],
+    similar: ["flexsearch", "lunr", "wade", "js-search", "fuse.js"],
   },
 
   "general-purpose-3d": {
@@ -199,6 +203,18 @@ export const categories: Categories = {
     ],
   },
 
+  "general-purpose-date-time": {
+    name: "General purpose date-time utilities",
+    tags: [
+      { tag: "date", weight: Weight.HIGH },
+      { tag: "time", weight: Weight.HIGH },
+      { tag: "parse", weight: Weight.LOW },
+      { tag: "parser", weight: Weight.LOW },
+      { tag: "format", weight: Weight.LOW },
+    ],
+    similar: ["moment", "luxon", "dayjs", "date-fns"],
+  },
+
   "graphql-client": {
     name: "GraphQL Clients",
     tags: [
@@ -241,38 +257,6 @@ export const categories: Categories = {
       { tag: "language", weight: Weight.LOW },
     ],
     similar: ["fbt", "globalize", "i18next", "node-polyglot", "@lingui/core"],
-  },
-
-  "node-http-request": {
-    name: "HTTP client libraries for Node.js",
-    tags: [
-      { tag: "http", weight: Weight.NORMAL },
-      { tag: "get", weight: Weight.NORMAL },
-      { tag: "post", weight: Weight.NORMAL },
-      { tag: "ajax", weight: Weight.HIGH },
-      { tag: "url", weight: Weight.MIN },
-      { tag: "request", weight: Weight.HIGH },
-      { tag: "agent", weight: Weight.LOW },
-      { tag: "xhr", weight: Weight.NORMAL },
-      { tag: "node node.js", weight: Weight.NORMAL },
-    ],
-    similar: ["got", "phin", "axios", "node-fetch", "superagent"],
-  },
-
-  "browser-http-request": {
-    name: "HTTP client libraries for Browser",
-    tags: [
-      { tag: "http", weight: Weight.NORMAL },
-      { tag: "get", weight: Weight.NORMAL },
-      { tag: "post", weight: Weight.NORMAL },
-      { tag: "ajax", weight: Weight.HIGH },
-      { tag: "url", weight: Weight.MIN },
-      { tag: "request", weight: Weight.HIGH },
-      { tag: "agent", weight: Weight.LOW },
-      { tag: "xhr", weight: Weight.NORMAL },
-      { tag: "browser", weight: Weight.NORMAL },
-    ],
-    similar: ["axios", "ky", "superagent", "whatwg-fetch", "unfetch"],
   },
 
   "icu-message-fromatter": {
@@ -368,6 +352,22 @@ export const categories: Categories = {
     ],
   },
 
+  "node-http-request": {
+    name: "HTTP client libraries for Node.js",
+    tags: [
+      { tag: "http", weight: Weight.NORMAL },
+      { tag: "get", weight: Weight.NORMAL },
+      { tag: "post", weight: Weight.NORMAL },
+      { tag: "ajax", weight: Weight.HIGH },
+      { tag: "url", weight: Weight.MIN },
+      { tag: "request", weight: Weight.HIGH },
+      { tag: "agent", weight: Weight.LOW },
+      { tag: "xhr", weight: Weight.NORMAL },
+      { tag: "node node.js", weight: Weight.NORMAL },
+    ],
+    similar: ["got", "phin", "axios", "node-fetch", "superagent"],
+  },
+
   "number-manipulation": {
     name: "Number and Currency Formatting",
     tags: [
@@ -411,6 +411,22 @@ export const categories: Categories = {
     ],
   },
 
+  "querystring-parser": {
+    name: "Query String Parsers",
+    tags: [
+      { tag: "query string", weight: Weight.NORMAL },
+      { tag: "querystring", weight: Weight.HIGH },
+      { tag: "parse", weight: Weight.LOW },
+      { tag: "parser", weight: Weight.LOW },
+      { tag: "url", weight: Weight.LOW },
+      { tag: "search params", weight: Weight.LOW },
+      { tag: "qs", weight: Weight.LOW },
+      { tag: "parameter", weight: Weight.NORMAL },
+      { tag: "params", weight: Weight.NORMAL },
+    ],
+    similar: ["qs", "query-string", "querystringify", "querystring"],
+  },
+
   "react-animation": {
     name: "React based animation",
     tags: [
@@ -436,6 +452,23 @@ export const categories: Categories = {
       "react-autowhatever",
       "react-autocomplete",
       "react-select",
+    ],
+  },
+
+  "react-form": {
+    name: "React based form builders & validators",
+    tags: [
+      { tag: "react", weight: Weight.NORMAL },
+      { tag: "redux", weight: Weight.LOW },
+      { tag: "form", weight: Weight.HIGH },
+      { tag: "validate", weight: Weight.MIN },
+    ],
+    similar: [
+      "formik",
+      "react-final-form",
+      "react-form",
+      "formsy-react",
+      "react-hook-form",
     ],
   },
 
@@ -468,21 +501,15 @@ export const categories: Categories = {
     ],
   },
 
-  "react-form": {
-    name: "React based form builders & validators",
+  "rich-text-editors": {
+    name: "Rich Text Editors",
     tags: [
-      { tag: "react", weight: Weight.NORMAL },
-      { tag: "redux", weight: Weight.LOW },
-      { tag: "form", weight: Weight.HIGH },
-      { tag: "validate", weight: Weight.MIN },
+      {
+        tag: "richtext rich text editor WYSIWYG contenteditable",
+        weight: Weight.NORMAL,
+      },
     ],
-    similar: [
-      "formik",
-      "react-final-form",
-      "react-form",
-      "formsy-react",
-      "react-hook-form",
-    ],
+    similar: ["slate", "quill", "draft-js", "medium-editor", "froala-editor"],
   },
 
   "schema-validation": {
@@ -498,33 +525,6 @@ export const categories: Categories = {
       { tag: "structure", weight: Weight.LOW },
     ],
     similar: ["jsonschema", "joi", "ajv", "superstruct", "yup", "validate.js"],
-  },
-
-  "querystring-parser": {
-    name: "Query String Parsers",
-    tags: [
-      { tag: "query string", weight: Weight.NORMAL },
-      { tag: "querystring", weight: Weight.HIGH },
-      { tag: "parse", weight: Weight.LOW },
-      { tag: "parser", weight: Weight.LOW },
-      { tag: "url", weight: Weight.LOW },
-      { tag: "search params", weight: Weight.LOW },
-      { tag: "qs", weight: Weight.LOW },
-      { tag: "parameter", weight: Weight.NORMAL },
-      { tag: "params", weight: Weight.NORMAL },
-    ],
-    similar: ["qs", "query-string", "querystringify", "querystring"],
-  },
-
-  "rich-text-editors": {
-    name: "Rich Text Editors",
-    tags: [
-      {
-        tag: "richtext rich text editor WYSIWYG contenteditable",
-        weight: Weight.NORMAL,
-      },
-    ],
-    similar: ["slate", "quill", "draft-js", "medium-editor", "froala-editor"],
   },
 
   "site-tour": {
@@ -596,16 +596,6 @@ export const categories: Categories = {
     similar: ["uuid", "shortid", "nanoid", "cuid"],
   },
 
-  "vanilla-tooltip": {
-    name: "Tooltip Libraries",
-    tags: [
-      { tag: "tooltip", weight: Weight.MAX },
-      { tag: "popover", weight: Weight.NORMAL },
-      { tag: "hint", weight: Weight.NORMAL },
-    ],
-    similar: ["tooltip.js", "tippy.js", "balloon-css", "hint.css", "microtip"],
-  },
-
   "vanilla-carousel": {
     name: "Vanilla JS Sliders & Carousels",
     tags: [
@@ -615,6 +605,16 @@ export const categories: Categories = {
       { tag: "slider", weight: Weight.MAX },
     ],
     similar: ["glider-js", "slick-carousel", "swiper", "flickity"],
+  },
+
+  "vanilla-tooltip": {
+    name: "Tooltip Libraries",
+    tags: [
+      { tag: "tooltip", weight: Weight.MAX },
+      { tag: "popover", weight: Weight.NORMAL },
+      { tag: "hint", weight: Weight.NORMAL },
+    ],
+    similar: ["tooltip.js", "tippy.js", "balloon-css", "hint.css", "microtip"],
   },
 
   "virtual-dom-engine": {
