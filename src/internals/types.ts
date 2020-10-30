@@ -1,6 +1,6 @@
 export enum Weight {
-  SMALL = 1,
-  MID = 3,
+  MIN = 1,
+  LOW = 3,
   NORMAL = 5,
   HIGH = 7,
   MAX = 15,
