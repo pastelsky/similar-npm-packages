@@ -1,6 +1,13 @@
-# similar-npm-packages
+<div align="center">
+  <a href="https://bundlephobia.com/">
+    <img src="logo.png" width="278" height="168" alt="similar-npm-packages" />
+  </a>
+</div>
 
-Similar packages suggestions for the NPM ecosystem
+<div align="center">
+  Similar packages suggestions for the NPM ecosystem.<br />
+  <a href="https://bundlephobia.com/">Bundlephobia</a> team project
+</div>
 
 ## Install
 
