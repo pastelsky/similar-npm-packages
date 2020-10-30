@@ -15,6 +15,8 @@ The best way to help us improve our registry is to create a Pull Request updatin
 
 Qualitative over quantitative. Before contributing you should know that we keep suggestions limited to 5 packages in all categories. If you're going to add a package to a "crowded" category, be ready to explain your suggestion. Qualitative over quantitative.
 
+Read the [contributing guide](https://github.com/pastelsky/similar-npm-packages/blob/main/CONTRIBUTING.md) for more details.
+
 ## Install
 
 ```
