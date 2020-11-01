@@ -13,7 +13,7 @@
 
 If you want to help us improve the registry you could [create a new issue](https://github.com/pastelsky/similar-npm-packages/issues/new) describing a suggested package/category or change `src/similar-npm-packages.ts` file yourself with a pull request.
 
-Qualitative over quantitative. Before contributing you should know that we keep suggestions limited to 5 packages in all categories. If you're going to add a package to a "crowded" category, be ready to explain your suggestion. Qualitative over quantitative.
+Qualitative over quantitative. Before contributing you should know that we keep suggestions limited to 5 packages in all categories. If you're going to add a package to a "crowded" category, be ready to explain your suggestion.
 
 ## Install
 
