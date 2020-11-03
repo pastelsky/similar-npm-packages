@@ -455,6 +455,15 @@ export const categories: Categories = {
     ],
   },
 
+  "react-drag-and-drop": {
+    name: "Drag and drop libraries for React",
+    tags: [
+      { tag: "drag drop", weight: Weight.MAX },
+      { tag: "sort", weight: Weight.HIGH },
+    ],
+    similar: ["react-beautiful-dnd", "react-dnd", "react-sortable-hoc"],
+  },
+
   "react-form": {
     name: "React based form builders & validators",
     tags: [
