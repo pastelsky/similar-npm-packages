@@ -501,6 +501,16 @@ export const categories: Categories = {
     ],
   },
 
+  "react-slider": {
+    name: "Slider components for React",
+    tags: [
+      { tag: "react", weight: Weight.NORMAL },
+      { tag: "slider", weight: Weight.MAX },
+      { tag: "range", weight: Weight.NORMAL },
+    ],
+    similar: ["rc-slider", "react-slider", "react-input-slider", "rheostat"],
+  },
+
   "rich-text-editors": {
     name: "Rich Text Editors",
     tags: [
