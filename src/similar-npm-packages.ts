@@ -310,6 +310,16 @@ export const categories: Categories = {
     ],
   },
 
+  "input-mask": {
+    name: "Input text content formatters",
+    tags: [
+      { tag: "input", weight: Weight.NORMAL },
+      { tag: "mask", weight: Weight.HIGH },
+      { tag: "format", weight: Weight.NORMAL },
+    ],
+    similar: ["cleave.js", "imask"],
+  },
+
   "lazy-load-content": {
     name: "Lazy Loading Content",
     tags: [
