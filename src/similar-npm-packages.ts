@@ -577,6 +577,16 @@ export const categories: Categories = {
     similar: ["raphael", "snapsvg", "two.js"],
   },
 
+  "template-engine": {
+    name: "Template engines",
+    tags: [
+      { tag: "template", weight: Weight.MAX },
+      { tag: "partial", weight: Weight.HIGH },
+      { tag: "html", weight: Weight.NORMAL },
+    ],
+    similar: ["handlebars", "eta"],
+  },
+
   "timezone-formatting": {
     name: "Timezone Formatting",
     tags: [
