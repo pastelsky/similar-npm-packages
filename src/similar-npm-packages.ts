@@ -74,7 +74,7 @@ export const categories: Categories = {
       { tag: "inline", weight: Weight.NORMAL },
       { tag: "in", weight: Weight.LOW },
     ],
-    similar: ["styled-components", "jss", "emotion", "linaria", "goober"],
+    similar: ["styled-components", "jss", "emotion", "linaria", "goober","@filbert-js/core"],
   },
 
   "date-nlp": {
