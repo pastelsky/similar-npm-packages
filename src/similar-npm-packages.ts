@@ -152,7 +152,7 @@ export const categories: Categories = {
       { tag: "fuzzy", weight: Weight.NORMAL },
       { tag: "text", weight: Weight.NORMAL },
     ],
-    similar: ["flexsearch", "lunr", "minisearch", "js-search", "fuse.js"],
+    similar: ["flexsearch", "lunr", "fuzzy-search", "js-search", "fuse.js"],
   },
 
   "general-purpose-3d": {
