@@ -590,7 +590,7 @@ export const categories: Categories = {
       { tag: "flux", weight: Weight.HIGH },
       { tag: "reducer", weight: Weight.HIGH },
     ],
-    similar: ["mobx", "redux", "immer", "effector", "xstate"],
+    similar: ["redux", "mobx", "mobx-state-tree", "zustand", "xstate"],
   },
 
   "svg-manipulation": {
