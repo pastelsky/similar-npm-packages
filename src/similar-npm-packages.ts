@@ -531,8 +531,8 @@ export const categories: Categories = {
     ],
   },
 
-  "react-slider": {
-    name: "React based slider components",
+  "react-range-input": {
+    name: "React based range input components",
     tags: [
       { tag: "react", weight: Weight.NORMAL },
       { tag: "slider", weight: Weight.NORMAL },
