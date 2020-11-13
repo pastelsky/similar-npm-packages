@@ -162,7 +162,7 @@ export const categories: Categories = {
       { tag: "webgl", weight: Weight.MAX },
       { tag: "gl", weight: Weight.HIGH },
     ],
-    similar: ["three", "babylonjs", "aframe"],
+    similar: ["three", "babylonjs"],
   },
 
   "general-purpose-animation": {
