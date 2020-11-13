@@ -479,8 +479,8 @@ export const categories: Categories = {
     name: "React based drag and drop libraries",
     tags: [
       { tag: "react", weight: Weight.NORMAL },
-      { tag: "drag drop", weight: Weight.MAX },
-      { tag: "sort", weight: Weight.HIGH },
+      { tag: "drag drop", weight: Weight.NORMAL },
+      { tag: "sort", weight: Weight.NORMAL },
     ],
     similar: ["react-beautiful-dnd", "react-dnd", "react-sortable-hoc"],
   },
