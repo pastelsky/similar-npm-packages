@@ -215,6 +215,16 @@ export const categories: Categories = {
     similar: ["moment", "luxon", "dayjs", "date-fns"],
   },
 
+  "general-purpose-template-engine": {
+    name: "General purpose template engines",
+    tags: [
+      { tag: "template", weight: Weight.HIGH },
+      { tag: "partial", weight: Weight.HIGH },
+      { tag: "engine", weight: Weight.NORMAL },
+    ],
+    similar: ["handlebars", "nunjucks", "ejs", "dot", "eta"],
+  },
+
   "graphql-client": {
     name: "GraphQL Clients",
     tags: [
@@ -595,16 +605,6 @@ export const categories: Categories = {
       { tag: "two dimensional", weight: Weight.LOW },
     ],
     similar: ["raphael", "snapsvg", "two.js"],
-  },
-
-  "template-engine": {
-    name: "Template engines",
-    tags: [
-      { tag: "template", weight: Weight.MAX },
-      { tag: "partial", weight: Weight.HIGH },
-      { tag: "html", weight: Weight.NORMAL },
-    ],
-    similar: ["handlebars", "eta"],
   },
 
   "timezone-formatting": {
