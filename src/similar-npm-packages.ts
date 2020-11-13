@@ -317,7 +317,7 @@ export const categories: Categories = {
       { tag: "mask", weight: Weight.HIGH },
       { tag: "format", weight: Weight.NORMAL },
     ],
-    similar: ["cleave.js", "imask"],
+    similar: ["cleave.js", "imask", "inputmask"],
   },
 
   "lazy-load-content": {
