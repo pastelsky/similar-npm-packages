@@ -466,7 +466,7 @@ export const categories: Categories = {
   },
 
   "react-drag-and-drop": {
-    name: "Drag and drop libraries for React",
+    name: "React based drag and drop libraries",
     tags: [
       { tag: "react", weight: Weight.NORMAL },
       { tag: "drag drop", weight: Weight.MAX },
