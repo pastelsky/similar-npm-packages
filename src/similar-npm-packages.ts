@@ -74,7 +74,7 @@ export const categories: Categories = {
       { tag: "inline", weight: Weight.NORMAL },
       { tag: "in", weight: Weight.LOW },
     ],
-    similar: ["styled-components", "jss", "emotion", "linaria"],
+    similar: ["styled-components", "jss", "emotion", "linaria", "goober"],
   },
 
   "date-nlp": {
@@ -152,7 +152,7 @@ export const categories: Categories = {
       { tag: "fuzzy", weight: Weight.NORMAL },
       { tag: "text", weight: Weight.NORMAL },
     ],
-    similar: ["flexsearch", "lunr", "wade", "js-search", "fuse.js"],
+    similar: ["flexsearch", "lunr", "fuzzy-search", "js-search", "fuse.js"],
   },
 
   "general-purpose-3d": {
@@ -213,6 +213,16 @@ export const categories: Categories = {
       { tag: "format", weight: Weight.LOW },
     ],
     similar: ["moment", "luxon", "dayjs", "date-fns"],
+  },
+
+  "general-purpose-template-engine": {
+    name: "General purpose template engines",
+    tags: [
+      { tag: "template", weight: Weight.HIGH },
+      { tag: "partial", weight: Weight.HIGH },
+      { tag: "engine", weight: Weight.NORMAL },
+    ],
+    similar: ["handlebars", "nunjucks", "ejs", "dot", "eta"],
   },
 
   "graphql-client": {
@@ -308,6 +318,16 @@ export const categories: Categories = {
       "immutability-helper",
       "baobab",
     ],
+  },
+
+  "input-mask": {
+    name: "Input text content formatters",
+    tags: [
+      { tag: "input", weight: Weight.NORMAL },
+      { tag: "mask", weight: Weight.HIGH },
+      { tag: "format", weight: Weight.NORMAL },
+    ],
+    similar: ["cleave.js", "imask", "inputmask"],
   },
 
   "lazy-load-content": {
@@ -455,6 +475,16 @@ export const categories: Categories = {
     ],
   },
 
+  "react-drag-and-drop": {
+    name: "React based drag and drop libraries",
+    tags: [
+      { tag: "react", weight: Weight.NORMAL },
+      { tag: "drag drop", weight: Weight.NORMAL },
+      { tag: "sort", weight: Weight.NORMAL },
+    ],
+    similar: ["react-beautiful-dnd", "react-dnd", "react-sortable-hoc"],
+  },
+
   "react-form": {
     name: "React based form builders & validators",
     tags: [
@@ -499,6 +529,17 @@ export const categories: Categories = {
       "eo-locale",
       "@lingui/react",
     ],
+  },
+
+  "react-range-input": {
+    name: "React based range input components",
+    tags: [
+      { tag: "react", weight: Weight.NORMAL },
+      { tag: "slider", weight: Weight.NORMAL },
+      { tag: "range", weight: Weight.NORMAL },
+      { tag: "input", weight: Weight.NORMAL },
+    ],
+    similar: ["rc-slider", "react-slider", "react-range", "react-input-slider"],
   },
 
   "rich-text-editors": {
@@ -550,7 +591,7 @@ export const categories: Categories = {
       { tag: "flux", weight: Weight.HIGH },
       { tag: "reducer", weight: Weight.HIGH },
     ],
-    similar: ["mobx", "redux", "immer", "freactal", "xstate"],
+    similar: ["redux", "mobx", "mobx-state-tree", "zustand", "xstate"],
   },
 
   "svg-manipulation": {
